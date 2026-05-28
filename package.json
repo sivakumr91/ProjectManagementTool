@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "codealpha-project-management-tool",
+  "private": true,
+  "scripts": {
+    "dev": "npm run client",
+    "client": "npm --workspace=client run dev",
+    "server": "npm --workspace=server run dev",
+    "build": "npm --workspace=client run build"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ]
+}
